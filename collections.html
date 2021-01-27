@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collections</title>
+    <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <!-- Header section starts here -->
+    <header class="header static">
+      <div class="top-bar">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12 col-sm-offset-6 col-sm-6">
+              <div class="pull-right">
+                <ul class="list-inline top-links coloured">
+                  <li>
+                    <a href="#">My Account</a>
+                  </li>
+                  <li>
+                    <a href="#" class="cart">
+                      <span class="cart-counter">3</span>
+                      <img
+                        class="img-responsive hidden-xs"
+                        src="assets/images/cart.png"
+                        alt="cart"
+                      />
+                      <img
+                        class="img-responsive visible-xs"
+                        src="assets/images/cart-white.png"
+                        alt="cart"
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="nav-wrapper">
+        <nav
+          class="navbar navbar-default navbar-transparent navbar-coloured"
+          data-spy="affix"
+          data-offset-top="250"
+        >
+          <div class="container">
+            <div class="navbar-header">
+              <button
+                type="button"
+                class="navbar-toggle"
+                data-toggle="collapse"
+                data-target="#navbar"
+              >
+                <span class="toggle-text visible-xs">MENU</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/">
+                <img src="assets/images/hms.png" class="hidden-xs" alt="HMS" />
+                <img
+                  src="assets/images/hms-white.png"
+                  class="visible-xs"
+                  alt="HMS"
+                />
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li>
+                  <a href="#">Shop</a>
+                </li>
+                <li>
+                  <a href="about-us.html">Craftmanship</a>
+                </li>
+                <li>
+                  <a href="collections.html">Collection</a>
+                </li>
+                <li>
+                  <a href="contact.html">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Header section ends here -->
+    <section class="section products-sections">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="text-center">
+              <ul class="list-inline list-category">
+                <li>
+                  <input
+                    type="radio"
+                    id="legend"
+                    class="custom-radio"
+                    name="category"
+                    value="legend"
+                  />
+                  <label for="legend" class="label">Legend</label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    id="absolute"
+                    class="custom-radio"
+                    name="category"
+                    value="absolute"
+                    checked
+                  />
+                  <label for="absolute" class="label">Absolute</label>
+                </li>
+                <li>
+                  <input
+                    type="radio"
+                    id="classic"
+                    class="custom-radio"
+                    name="category"
+                    value="classic"
+                  />
+                  <label for="classic" class="label">Classic</label>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="filter-section text-center">
+              <ul class="list-inline">
+                <!-- Fragrance filter starts here -->
+                <li>
+                  <div class="select-box">
+                    <input
+                      type="checkbox"
+                      class="options-view-button"
+                      id="fragrance-view-button"
+                    />
+                    <div class="select-button">
+                        <span id="selected-fragrance-value">Sort by Fragrance</span> 
+                        <span class="icon-wrappper">
+                          <i class="fa fa-angle-down"></i>
+                        </span>  
+                    </div>
+                    <div class="options hidden visualhidden">
+                      <div class="option">
+                        <input
+                          type="radio"
+                          name="fragrance"
+                          value="Himalayan Cederwood"
+                        />
+                        <span class="label">Himalayan Cederwood</span>
+                      </div>
+                      <div class="option">
+                        <input
+                          type="radio"
+                          name="fragrance"
+                          value="Oriental Forest"
+                        />
+                        <span class="label">Oriental Forest</span>
+                      </div>
+                      <div class="option">
+                        <input type="radio" name="fragrance" value="Lavender" />
+                        <span class="label">Lavender</span>
+                      </div>
+                      <div class="option">
+                        <input
+                          type="radio"
+                          name="fragrance"
+                          value="Green Champa"
+                        />
+                        <span class="label">Green Champa</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- Fragrance filter ends here -->
+                <!-- Purpose filter starts here -->
+                <li>
+                  <div class="select-box">
+                    <input
+                      type="checkbox"
+                      class="options-view-button"
+                      id="purpose-view-button"
+                    />
+                    <div class="select-button">
+                      <span id="selected-purpose-value">Sort by Purpose</span>
+                      <span class="icon-wrappper">
+                        <i class="fa fa-angle-down"></i>
+                      </span>
+                    </div>
+                    <div class="options hidden visualhidden">
+                      <div class="option">
+                        <input
+                          type="radio"
+                          name="purpose"
+                          value="Bhakti-Puja"
+                        />
+                        <span class="label">Bhakti-Puja</span>
+                      </div>
+                      <div class="option">
+                        <input
+                          type="radio"
+                          name="purpose"
+                          value="Therapeutic"
+                        />
+                        <span class="label">Therapeutic</span>
+                      </div>
+                      <div class="option">
+                        <input
+                          type="radio"
+                          name="purpose"
+                          value="Aphrodisiac"
+                        />
+                        <span class="label">Aphrodisiac</span>
+                      </div>
+                      <div class="option">
+                        <input
+                          type="radio"
+                          name="purpose"
+                          value="Yoga & Meditation"
+                        />
+                        <span class="label">Yoga &amp; Meditation</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- Purpose filter ends here -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-xl-6 col-sm-6 col-md-3">
+            <div class="product-wrapper">
+              <div class="product-info-overlay">
+                <div class="overlay-content">
+                  <h5 class="category">Absolute</h5>
+                  <a href="#" class="name"
+                    >Himalayan <br />
+                    Cederwood</a
+                  >
+                  <ul class="list-inline variants">
+                    <li>20g ₹99</li>
+                    <li>50g ₹249</li>
+                  </ul>
+                </div>
+              </div>
+              <img
+                src="assets/images/products/8.png"
+                alt=""
+                class="img-responsive"
+              />
+            </div>
+          </div>
+          <div class="col-xs-12 col-xl-6 col-sm-6 col-md-3">
+            <div class="product-wrapper">
+              <div class="product-info-overlay">
+                <div class="overlay-content">
+                  <h5 class="category">Absolute</h5>
+                  <a href="#" class="name"
+                    >Himalayan <br />
+                    Cederwood</a
+                  >
+                  <ul class="list-inline variants">
+                    <li>20g ₹99</li>
+                    <li>50g ₹249</li>
+                  </ul>
+                </div>
+              </div>
+              <img
+                src="assets/images/products/8.png"
+                alt=""
+                class="img-responsive"
+              />
+            </div>
+          </div>
+          <div class="col-xs-12 col-xl-6 col-sm-6 col-md-3">
+            <div class="product-wrapper">
+              <div class="product-info-overlay">
+                <div class="overlay-content">
+                  <h5 class="category">Absolute</h5>
+                  <a href="#" class="name"
+                    >Himalayan <br />
+                    Cederwood</a
+                  >
+                  <ul class="list-inline variants">
+                    <li>20g ₹99</li>
+                    <li>50g ₹249</li>
+                  </ul>
+                </div>
+              </div>
+              <img
+                src="assets/images/products/8.png"
+                alt=""
+                class="img-responsive"
+              />
+            </div>
+          </div>
+          <div class="col-xs-12 col-xl-6 col-sm-6 col-md-3">
+            <div class="product-wrapper">
+              <div class="product-info-overlay">
+                <div class="overlay-content">
+                  <h5 class="category">Absolute</h5>
+                  <a href="#" class="name"
+                    >Himalayan <br />
+                    Cederwood</a
+                  >
+                  <ul class="list-inline variants">
+                    <li>20g ₹99</li>
+                    <li>50g ₹249</li>
+                  </ul>
+                </div>
+              </div>
+              <img
+                src="assets/images/products/8.png"
+                alt=""
+                class="img-responsive"
+              />
+            </div>
+          </div>
+          <div class="col-xs-12 col-xl-6 col-sm-6 col-md-3">
+            <div class="product-wrapper">
+              <div class="product-info-overlay">
+                <div class="overlay-content">
+                  <h5 class="category">Absolute</h5>
+                  <a href="#" class="name"
+                    >Himalayan <br />
+                    Cederwood</a
+                  >
+                  <ul class="list-inline variants">
+                    <li>20g ₹99</li>
+                    <li>50g ₹249</li>
+                  </ul>
+                </div>
+              </div>
+              <img
+                src="assets/images/products/8.png"
+                alt=""
+                class="img-responsive"
+              />
+            </div>
+          </div>
+          <div class="col-xs-12 col-xl-6 col-sm-6 col-md-3">
+            <div class="product-wrapper">
+              <div class="product-info-overlay">
+                <div class="overlay-content">
+                  <h5 class="category">Absolute</h5>
+                  <a href="#" class="name"
+                    >Himalayan <br />
+                    Cederwood</a
+                  >
+                  <ul class="list-inline variants">
+                    <li>20g ₹99</li>
+                    <li>50g ₹249</li>
+                  </ul>
+                </div>
+              </div>
+              <img
+                src="assets/images/products/8.png"
+                alt=""
+                class="img-responsive"
+              />
+            </div>
+          </div>
+          <div class="col-xs-12 col-xl-6 col-sm-6 col-md-3">
+            <div class="product-wrapper">
+              <div class="product-info-overlay">
+                <div class="overlay-content">
+                  <h5 class="category">Absolute</h5>
+                  <a href="#" class="name"
+                    >Himalayan <br />
+                    Cederwood</a
+                  >
+                  <ul class="list-inline variants">
+                    <li>20g ₹99</li>
+                    <li>50g ₹249</li>
+                  </ul>
+                </div>
+              </div>
+              <img
+                src="assets/images/products/8.png"
+                alt=""
+                class="img-responsive"
+              />
+            </div>
+          </div>
+          <div class="col-xs-12 col-xl-6 col-sm-6 col-md-3">
+            <div class="product-wrapper">
+              <div class="product-info-overlay">
+                <div class="overlay-content">
+                  <h5 class="category">Absolute</h5>
+                  <a href="#" class="name"
+                    >Himalayan <br />
+                    Cederwood</a
+                  >
+                  <ul class="list-inline variants">
+                    <li>20g ₹99</li>
+                    <li>50g ₹249</li>
+                  </ul>
+                </div>
+              </div>
+              <img
+                src="assets/images/products/8.png"
+                alt=""
+                class="img-responsive"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer section starts here -->
+    <footer class="section footer-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-sm-3 col-md-2">
+            <a href="/">
+              <img src="assets/images/hms-logo.png" alt="" class="img-responsive"
+            /></a>
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-10">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-7">
+                <div class="footer-links-wrapper">
+                  <ul class="list-inline footer-links">
+                    <li><a href="#">Help</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="#">Feedback</a></li>
+                  </ul>
+                  <ul class="list-inline footer-links">
+                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Payment Policy</a></li>
+                  </ul>
+                  <div class="horizontal-rule"></div>
+                </div>
+                <div class="payment-options">
+                  <h5 class="footer-label">Payment Options</h5>
+                  <ul class="list-inline list-options">
+                    <li class="master"></li>
+                    <li class="visa"></li>
+                    <li class="paypal"></li>
+                    <li class="amx"></li>
+                    <li class="cod"></li>
+                    <li class="netbanking"></li>
+                  </ul>
+                </div>
+                <div class="shipping-options">
+                  <h5 class="footer-label">Worldwide Shipping</h5>
+                  <ul class="list-inline list-shipping">
+                    <li class="dhl"></li>
+                    <li class="ups"></li>
+                    <li class="bluedart"></li>
+                  </ul>
+                  <div class="horizontal-rule"></div>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-5">
+                <div class="social-bar-wrapper">
+                  <ul class="list-inline social-media-links">
+                    <li class="whatsapp"><a href="#"></a></li>
+                    <li class="instagram"><a href="#"></a></li>
+                    <li class="facebook"><a href="#"></a></li>
+                    <li class="youtube"><a href="#"></a></li>
+                  </ul>
+                </div>
+                <div class="horizontal-rule"></div>
+                <div class="newsletter-wrapper">
+                  <form
+                    class="form"
+                    action="handlers/form-handler.php"
+                    method="POST"
+                  >
+                    <div class="alert alert-dismissable hidden visualhidden">
+                      <a href="#" class="close" data-dismiss="alert">&times;</a>
+                      <span></span>
+                    </div>
+                    <div class="form-group">
+                      <label for="email" class="control-label"
+                        >Subscribe to HMS Club</label
+                      >
+                      <input
+                        id="email"
+                        type="email"
+                        class="form-control"
+                        placeholder="Email ID"
+                        maxlength="50"
+                        name="email"
+                        required
+                      />
+                      <input type="hidden" name="subscribe" value="true" />
+                      <button class="btn-subscribe" type="submit">
+                        <img src="assets/images/button.png" alt="button" />
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-xs-12 col-sm-offset-3 col-sm-9 col-md-offset-2 col-md-10"
+          >
+            <div class="copyright-wrapper">
+              <h5 class="copytext">
+                &copy; Incensekart 2020. All rights reserved.
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer section ends here -->
+    <script src="assets/js/vendors/jquery.min.js"></script>
+    <script src="assets/js/vendors/bootstrap.min.js"></script>
+    <script>
+      $("input[name=fragrance]").click(function () {
+        let selection = $("input[name=fragrance]:checked").val();
+        if (selection) {
+          // Change the text of selected value
+          $("#selected-fragrance-value").html(selection);
+          // After selection close the options panel
+          $("#fragrance-view-button").click();
+        }
+      });
+
+      $("input[name=purpose]").click(function () {
+        let selection = $("input[name=purpose]:checked").val();
+        if (selection) {
+          // Change the text of selected value
+          $("#selected-purpose-value").html(selection);
+          // After selection, close the options panel
+          $("#purpose-view-button").click();
+          
+        }
+      });
+
+      $(".options-view-button").click(function(){
+        let selector = $(this);
+        if(selector.siblings(".options").hasClass("hidden")){
+          selector.siblings(".options").removeClass("hidden");
+          setTimeout(function(){
+            selector.siblings(".options").removeClass("visualhidden");
+          }, 50)
+        }
+        else{
+          selector.siblings(".options").addClass("hidden");
+          setTimeout(function(){
+            selector.siblings(".options").addClass("visualhidden");
+          }, 50)
+        }
+      })
+    </script>
+  </body>
+</html>
