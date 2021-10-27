@@ -204,8 +204,8 @@ img {
 }
 
 .carousel-section {
-  padding-top: 25px;
-  padding-bottom: 50px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .carousel-section .overlay {
@@ -222,18 +222,18 @@ img {
 .carousel-section .carousel-caption {
   position: absolute;
   right: initial;
-  width: 60%;
+  width: 20%;
   left: 10%;
-  top: 50%;
+  top: 60%;
   z-index: 10;
-  text-align: left;
+  text-align: center;
   text-shadow: none;
   transform: translateY(-50%);
 }
 
 .carousel-section .carousel-title {
   font-family: "PT Serif", serif;
-  font-size: 22px;
+  font-size: 35px;
   text-transform: uppercase;
   margin-bottom: 30px;
 }
@@ -243,12 +243,20 @@ img {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   color: #fff;
+  background-color: transparent;
   text-transform: uppercase;
   padding: 6px 30px;
   border: 1px solid #fff;
-  margin: 10px 0;
+  margin: 40px 0;
   text-decoration: none !important;
   transition: all 0.25s ease-in-out;
+}
+
+.carousel-section .carousel-link:hover,
+.carousel-section .carousel-link:focus,
+.carousel-section .carousel-link:active {
+  background-color: #fff;
+  color: #73532f;
 }
 
 .carousel-section .carousel-indicators {
@@ -280,6 +288,8 @@ img {
 .carousel-section .carousel-control.right {
   background-image: none;
   width: 20px;
+  display: flex;
+  align-items: center;
 }
 
 .carousel-section .carousel-control.left {
@@ -873,7 +883,7 @@ ul.footer-links {
   }
 
   .carousel-section .carousel-title {
-    font-size: 18px;
+    font-size: 24px;
     margin-bottom: 10px;
   }
 

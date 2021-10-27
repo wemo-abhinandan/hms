@@ -59,3 +59,7 @@ function setBoxHeight() {
     let imageHeight = $("#process-one").innerHeight();
     $(".process-box").css("height", imageHeight);
 }
+
+$('.carousel').carousel({
+    interval: 5000
+  })
