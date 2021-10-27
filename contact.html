@@ -14,7 +14,7 @@
   <body>
     <!-- Header section starts here -->
     <header class="header static">
-      <div class="top-bar">
+      <!-- <div class="top-bar">
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-offset-6 col-sm-6">
@@ -43,7 +43,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="nav-wrapper">
         <nav
           class="navbar navbar-default navbar-transparent navbar-coloured"
@@ -93,215 +93,154 @@
       </div>
     </header>
     <!-- Header section ends here -->
-    <section class="section contact-top-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <h2 class="section-title">Contact us</h2>
+    <div class="col-xl-12 container contact-body">
+      <div class="col-xs-12 col-sm-7 contact-us" >
+        <section class="section contact-top-section contact-us"> 
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <h2 class="section-title contact-us-title">Contact us</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12 col-sm-4">
+                <p class="section-content address-info">
+                  451, Near Fadke House Chowk, <br />
+                  Raviwar Peth, <br />
+                  Pune, Maharashtra - 411 002
+                </p>
+              </div>
+              <div class="col-xs-12 col-sm-3">
+                <p class="section-content contact-info">
+                  <a href="tel:+911234567890">+91 12345 67890</a> <br />
+                  <a href="mailto:hello@hmsofficial.com">hello@hmsofficial.com</a>
+                  <br />
+                  <a href="#">Find us on Google Maps</a>
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12 col-sm-4">
-            <p class="section-content address-info">
-              451, Near Fadke House Chowk, <br />
-              Raviwar Peth, <br />
-              Pune, Maharashtra - 411 002
-            </p>
+        </section>
+        <section class="section contact-bottom-section">
+          <div class="container">
+            <div class="row">
+              <div class="col-xs-12">
+                <p class="section-content contact-info">
+                  Press Inquiries:
+                  <a href="mailto:hello@hmsofficial.com">hello@hmsofficial.com</a>
+                </p>
+                <p class="section-content contact-info">
+                  Sales Inquiries:
+                  <a href="mailto:sales@hmsofficial.com">sales@hmsofficial.com</a>
+                </p>
+              </div>
+            </div>
+            <!-- <div class="row">
+              <div class="col-xs-12">
+                <img src="assets/images/contact-banner.jpeg" alt="" class="img-responsive">
+              </div>
+            </div> -->
           </div>
-          <div class="col-xs-12 col-sm-4">
-            <p class="section-content contact-info">
-              <a href="tel:+911234567890">+91 12345 67890</a> <br />
-              <a href="mailto:hello@hmsofficial.com">hello@hmsofficial.com</a>
-              <br />
-              <a href="#">Find us on Google Maps</a>
-            </p>
-          </div>
-        </div>
+        </section>
       </div>
-    </section>
-    <section class="section contact-form-section">
-      <div class="container">
-        <form class="form" action="handlers/form-handler.php" method="POST">
-          <div class="row">
-            <div class="col-xs-12">
-              <div class="form-group">
-                <textarea
-                  class="form-control"
-                  placeholder="Write to us..."
-                  name="message"
-                  rows="4"
-                ></textarea>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-xs-12 col-sm-6">
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control"
-                  placeholder="Your name"
-                  name="name"
-                  maxlength="50"
-                  required
-                />
-              </div>
-            </div>
-            <div class="col-xs-12 col-sm-6">
-              <div class="form-group">
-                <div class="input-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Your e-mail"
-                    name="email"
-                    maxlength="50"
-                    required
-                  />
-                  <span class="input-group-btn">
-                    <input type="hidden" name="submit" value="true" />
-                    <button type="submit" class="btn btn-default">
-                      Send
-                    </button>
-                  </span>
+      <div class="col-xs-12 col-sm-5" >
+        <section class="section contact-form-section">
+          <div class="container">
+            <div class="col-lg-5 mail-form">
+              <form action="handlers/form-handler.php" method="post">
+                <div class="form-row">
+                  <div class="col form-group">
+                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <div class="validate"></div>
+                  </div>
+                  <div class="col form-group">
+                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <div class="validate"></div>
+                  </div>
                 </div>
-              </div>
+                <div class="form-group">
+                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <div class="validate"></div>
+                </div>
+                <div class="text-center"><button class="btn btn-default" type="submit">Send Message</button></div>
+                <div class="row">
+                  <div class="col-xs-12">
+                    <div
+                      class="alert alert-success alert-dismissable hidden visualhidden"
+                    >
+                      <a href="#" class="close" data-dismiss="alert">&times;</a>
+                      <span></span>
+                    </div>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
-          <div class="row">
-            <div class="col-xs-12">
-              <div
-                class="alert alert-success alert-dismissable hidden visualhidden"
-              >
-                <a href="#" class="close" data-dismiss="alert">&times;</a>
-                <span></span>
-              </div>
-            </div>
-          </div>
-        </form>
+        </section>
       </div>
-    </section>
-    <section class="section contact-bottom-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <p class="section-content contact-info">
-              Press Inquiries:
-              <a href="mailto:hello@hmsofficial.com">hello@hmsofficial.com</a>
-            </p>
-            <p class="section-content contact-info">
-              Sales Inquiries:
-              <a href="mailto:sales@hmsofficial.com">sales@hmsofficial.com</a>
-            </p>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-xs-12">
-            <img src="assets/images/contact-banner.jpeg" alt="" class="img-responsive">
-          </div>
-        </div>
-      </div>
-    </section>
+    </div>
+    
     <!-- Footer section starts here -->
     <footer class="section footer-section">
       <div class="container">
         <div class="row">
-          <div class="col-xs-12 col-sm-3 col-md-2">
+          <div class="col-xs-12 col-sm-5 col-md-4 logo-container ">
             <a href="/">
               <img src="assets/images/hms-logo.png" alt="" class="img-responsive"
             /></a>
+            <div class="social-bar-wrapper">
+              <ul class="list-inline social-media-links">
+                <li class="whatsapp"><a href="#"></a></li>
+                <li class="instagram"><a href="#"></a></li>
+                <li class="facebook"><a href="#"></a></li>
+                <li class="youtube"><a href="#"></a></li>
+              </ul>
+            </div>
+            <div class="copyright-wrapper">
+              <h5 class="copytext">
+                &copy; Incensekart 2020. All rights reserved.
+              </h5>
+            </div>
           </div>
-          <div class="col-xs-12 col-sm-9 col-md-10">
+          <div class="col-xs-12 col-sm-7 col-md-5">
             <div class="row">
-              <div class="col-xs-12 col-sm-12 col-md-7">
+              <div class="col-xs-12 col-sm-12 col-md-6">
                 <div class="footer-links-wrapper">
-                  <ul class="list-inline footer-links">
+                  <h5 class="footer-label">Quick Links</h5>
+                  <ul class=" footer-links">
                     <li><a href="#">Help</a></li>
                     <li><a href="#">FAQ</a></li>
                     <li><a href="#">Returns</a></li>
                     <li><a href="#">Shipping</a></li>
                     <li><a href="#">Feedback</a></li>
                   </ul>
-                  <ul class="list-inline footer-links">
+                  <ul class=" footer-links">
                     <li><a href="#">Terms &amp; Conditions</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">Payment Policy</a></li>
                   </ul>
-                  <div class="horizontal-rule"></div>
+                  <!-- <div class="horizontal-rule"></div> -->
                 </div>
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-6">
                 <div class="payment-options">
                   <h5 class="footer-label">Payment Options</h5>
-                  <ul class="list-inline list-options">
-                    <li class="master"></li>
-                    <li class="visa"></li>
-                    <li class="paypal"></li>
-                    <li class="amx"></li>
-                    <li class="cod"></li>
-                    <li class="netbanking"></li>
-                  </ul>
-                </div>
-                <div class="shipping-options">
-                  <h5 class="footer-label">Worldwide Shipping</h5>
-                  <ul class="list-inline list-shipping">
-                    <li class="dhl"></li>
-                    <li class="ups"></li>
-                    <li class="bluedart"></li>
-                  </ul>
-                  <div class="horizontal-rule"></div>
+                  <!-- <div class="col-xs-12 col-sm-12 col-md-2"> -->
+                    <ul class=" list-options">
+                      <li class="master"></li>
+                      <li class="visa"></li>
+                      <li class="paypal"></li>
+                      <li class="amx"></li>
+                      <li class="cod"></li>
+                      <li class="netbanking"></li>
+                    </ul>
+                  <!-- </div> -->
                 </div>
               </div>
-              <div class="col-xs-12 col-sm-12 col-md-5">
-                <div class="social-bar-wrapper">
-                  <ul class="list-inline social-media-links">
-                    <li class="whatsapp"><a href="#"></a></li>
-                    <li class="instagram"><a href="#"></a></li>
-                    <li class="facebook"><a href="#"></a></li>
-                    <li class="youtube"><a href="#"></a></li>
-                  </ul>
-                </div>
-                <div class="horizontal-rule"></div>
-                <div class="newsletter-wrapper">
-                  <form
-                    class="form"
-                    action="handlers/form-handler.php"
-                    method="POST"
-                  >
-                    <div class="alert alert-dismissable hidden visualhidden">
-                      <a href="#" class="close" data-dismiss="alert">&times;</a>
-                      <span></span>
-                    </div>
-                    <div class="form-group">
-                      <label for="email" class="control-label"
-                        >Subscribe to HMS Club</label
-                      >
-                      <input
-                        id="email"
-                        type="email"
-                        class="form-control"
-                        placeholder="Email ID"
-                        maxlength="50"
-                        name="email"
-                        required
-                      />
-                      <input type="hidden" name="subscribe" value="true" />
-                      <button class="btn-subscribe" type="submit">
-                        <img src="assets/images/button.png" alt="button" />
-                      </button>
-                    </div>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div
-            class="col-xs-12 col-sm-offset-3 col-sm-9 col-md-offset-2 col-md-10"
-          >
-            <div class="copyright-wrapper">
-              <h5 class="copytext">
-                &copy; Incensekart 2020. All rights reserved.
-              </h5>
             </div>
           </div>
         </div>

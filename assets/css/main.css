@@ -497,14 +497,30 @@ img {
   font-weight: 500;
 }
 
+.logo-container {
+  text-align: center;
+  margin-right: 100px;
+}
+
 .footer-section {
   background-color: #ede9e7;
   background-image: url("../images/texture-background.png");
 }
 
 .footer-section .img-responsive {
+  display: block;
+  margin: 0 auto;
   max-width: 160px;
   margin-bottom: 30px;
+}
+
+ul.footer-links {
+  padding: 0;
+}
+
+.footer-links {
+  list-style-type: none;
+  /* text-align: left; */
 }
 
 .footer-links li a {
@@ -517,6 +533,10 @@ img {
   text-decoration: none !important;
 }
 
+/* .footer-links-wrapper {
+  text-align: center;
+} */
+
 .horizontal-rule {
   display: block;
   width: 100%;
@@ -525,6 +545,10 @@ img {
   background-repeat: repeat-x;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.payment-options {
+  text-align: center;
 }
 
 .footer-section .control-label,
@@ -631,6 +655,11 @@ img {
   margin-right: 10px;
 }
 
+.list-options {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
 .list-options li.master {
   background-position: 5px 0;
 }
@@ -682,6 +711,22 @@ img {
   width: 120px;
   background-size: 250%;
   background-position: -172px 0;
+}
+
+.contact-body {
+  padding: 40px 0;
+}
+
+.contact-us {
+  padding: 0;
+}
+
+.contact-us-title {
+  margin: 0;
+}
+
+.mail-form {
+  padding: 0 45px;
 }
 
 @media (min-width: 992px) {
@@ -1036,6 +1081,7 @@ img {
   font-size: 26px;
   font-weight: 400;
   margin-bottom: 30px;
+  padding: 0;
 }
 
 .contact-bottom-section .section-content,
