@@ -220,15 +220,22 @@ img {
 }
 
 .carousel-section .carousel-caption {
+  /* display: flex; */
   position: absolute;
   right: initial;
-  width: 20%;
-  left: 10%;
-  top: 60%;
+  width: 600px;
+  left: 0;
+  right: 0;
+  top: 40%;
+  /* bottom: 0; */
+  margin-left: auto;
+  margin-right: auto;
+  /* margin-top: auto; */
+  /* margin-bottom: auto; */
   z-index: 10;
   text-align: center;
   text-shadow: none;
-  transform: translateY(-50%);
+  /* transform: translateY(-50%); */
 }
 
 .carousel-section .carousel-title {
@@ -260,9 +267,9 @@ img {
 }
 
 .carousel-section .carousel-indicators {
-  left: 30px;
-  margin: 0;
-  text-align: left;
+  /* left: 30px; */
+  /* margin: 0; */
+  text-align: center;
 }
 
 .carousel-indicators li {
@@ -279,25 +286,30 @@ img {
 }
 
 .carousel-section .carousel-control {
-  color: #aa8265;
+  color: #fff;
   opacity: 0.75;
   text-shadow: none;
 }
 
 .carousel-section .carousel-control.left,
 .carousel-section .carousel-control.right {
+  z-index: 20;
   background-image: none;
   width: 20px;
   display: flex;
   align-items: center;
 }
 
+.carousel-image {
+  width: 100%;
+}
+
 .carousel-section .carousel-control.left {
-  left: -40px;
+  left: 30%;
 }
 
 .carousel-section .carousel-control.right {
-  right: -40px;
+  right: 30%;
 }
 
 .carousel-section .carousel-control .fa-angle-left,
@@ -327,6 +339,7 @@ img {
 
 .feature-section .card {
   text-align: center;
+  padding: 0 40px ;
 }
 
 .feature-section .card {
@@ -401,6 +414,7 @@ img {
   max-width: 360px;
   margin: auto;
   margin-bottom: 30px;
+  padding: 0 20px;
 }
 
 .collection-wrapper .img-responsive {
@@ -525,6 +539,7 @@ img {
 }
 
 ul.footer-links {
+  display: inline-block;
   padding: 0;
 }
 
@@ -539,13 +554,13 @@ ul.footer-links {
   font-weight: 500;
   color: #73532f;
   outline: 0;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   text-decoration: none !important;
 }
 
-/* .footer-links-wrapper {
-  text-align: center;
-} */
+.footer-links-wrapper {
+  display: inline-block;
+}
 
 .horizontal-rule {
   display: block;
@@ -557,8 +572,13 @@ ul.footer-links {
   margin-bottom: 10px;
 }
 
+hr {
+  background-color: #aa8265;
+  height: 1px;
+}
+
 .payment-options {
-  text-align: center;
+  /* text-align: center; */
 }
 
 .footer-section .control-label,
@@ -662,12 +682,12 @@ ul.footer-links {
   background-repeat: no-repeat;
   background-position: top left;
   background-image: url("../images/payment-sprites.png");
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 .list-options {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 0;
+  /* padding-right: 40px; */
 }
 
 .list-options li.master {
@@ -869,9 +889,9 @@ ul.footer-links {
   }
 
   .carousel-section .carousel-caption {
-    width: 100%;
-    top: 40%;
-    transform: translateY(-40%);
+    /* width: 100%; */
+    /* top: 40%; */
+    /* transform: translateY(-40%); */
   }
 
   .carousel-section {
@@ -879,7 +899,8 @@ ul.footer-links {
   }
 
   .carousel-section .carousel-caption {
-    left: 5%;
+    /* left: 5%; */
+    text-align: center;
   }
 
   .carousel-section .carousel-title {
@@ -964,8 +985,8 @@ ul.footer-links {
   }
 
   .carousel-section .carousel-caption {
-    top: 30%;
-    transform: translateY(-30%);
+    /* top: 30%; */
+    /* transform: translateY(-30%); */
   }
 
   .carousel-section .carousel-title {
@@ -1529,4 +1550,61 @@ ul.footer-links {
     bottom: -50px;
     margin-left: -10px;
   }
+}
+
+.collection-name, .collection-price {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #73532f;
+  text-transform: uppercase;
+  
+}
+
+.collection-name {
+  margin-top: 15px;
+}
+
+.view-button {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #73532f;
+  background-color: transparent;
+  text-transform: uppercase;
+  padding: 6px 30px;
+  border: 2px solid #73532F;
+  margin-top: 12%;
+  text-decoration: none !important;
+  transition: all 0.25s ease-in-out;
+}
+
+.view-button:hover,
+.view-button:focus,
+.view-button:active {
+  background-color: #73532F;
+  color: #fff;
+}
+
+.collection-button-section {
+  text-align: center;
+}
+
+.view-collection-button {
+  display: inline-block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #73532f;
+  background-color: transparent;
+  text-transform: uppercase;
+  padding: 6px 30px;
+  border: 2px solid #73532F;
+  text-decoration: none !important;
+  transition: all 0.25s ease-in-out;
+}
+
+.view-collection-button:hover,
+.view-collection-button:focus,
+.view-collection-button:active {
+  background-color: #73532F;
+  color: #fff;
 }
