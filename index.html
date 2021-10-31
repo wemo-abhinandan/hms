@@ -118,7 +118,16 @@
             </ol>
             <div class="carousel-inner">
               <div class="item active">
-                <img class="d-block w-100 carousel-image" src="./assets/images/carousel.png" alt="First slide">
+                <video
+                id="background-video"
+                autoplay
+                muted
+                loop
+                class="d-block w-100"
+                alt="First slide"
+              >
+                <source src="assets/videos/carousel1.mov" type="video/mp4" />
+              </video>
                 <div class="carousel-caption ">
                   <div class="carousel-title">
                     <h3>Handicrafted Incense Sticks</h3>
@@ -127,10 +136,40 @@
                 </div>
               </div>
               <div class="item">
-                <img class="d-block w-100 carousel-image" src="./assets/images/carousel.png" alt="Second slide">
+                <video
+                id="background-video"
+                autoplay
+                muted
+                loop
+                class="d-block w-100"
+                alt="Second slide"
+              >
+                <source src="assets/videos/carousel2.mov" type="video/mp4" />
+              </video>
               </div>
               <div class="item">
-                <img class="d-block w-100 carousel-image" src="./assets/images/carousel.png" alt="Third slide">
+                <video
+                id="background-video"
+                autoplay
+                muted
+                loop
+                class="d-block w-100"
+                alt="Third slide"
+              >
+                <source src="assets/videos/carousel3.mov" type="video/mp4" />
+              </video>
+              </div>
+              <div class="item">
+                <video
+                id="background-video"
+                autoplay
+                muted
+                loop
+                class="d-block w-100"
+                alt="Forth slide"
+              >
+                <source src="assets/videos/carousel4.mov" type="video/mp4" />
+              </video>
               </div>
             </div>
             <a class="left carousel-control" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -204,7 +243,7 @@
         <div class="row">
           <div class="col-xs-12 col-sm-4 col-md-3">
             <div class="card">
-              <div data-aos="fade-right">
+              <div data-aos="fade-right" data-aos-duration="1000" >
                 <h4 class="card-title">The Secret Mix</h4>
                 <p class="card-content top-line bottom-line">
                   HMS incense sticks are created following the original masala method, trusting an ancient formulation of relaxing ayurvedic herbs, natural gums, resins, sundried flowers, botanical extracts and aromatic oils. They are ground into a fine powder for use as the base of the paste.
@@ -229,7 +268,7 @@
             </div>
           </div>
           <div class="col-xs-12 col-sm-12 col-md-6">
-            <div data-aos="fade-left">
+            <div data-aos="fade-left" data-aos-duration="1000">
               <div class="row">
                 <div class="col-xs-12">
                   <div class="process-box one">
@@ -248,7 +287,7 @@
                 </div>
               </div>
             </div>
-            <div data-aos="fade-right">
+            <div data-aos="fade-right" data-aos-duration="1000">
               <div class="row">
                 <div class="col-xs-12">
                   <div class="process-box two">
@@ -266,7 +305,7 @@
                 </div>
               </div>
             </div>
-            <div data-aos="fade-left">
+            <div data-aos="fade-left" data-aos-duration="1000">
               <div class="row">
                 <div class="col-xs-12">
                   <div class="process-box three">
@@ -284,7 +323,7 @@
                 </div>
               </div>
             </div>
-            <div data-aos="fade-right">
+            <div data-aos="fade-right" data-aos-duration="1000">
               <div class="row">
                 <div class="col-xs-12">
                   <div class="process-box four">
@@ -310,7 +349,7 @@
       <div class="container">
         <div class="row">
           <div class="col-xs-12 col-sm-4 col-md-5">
-            <div data-aos="fade-right">
+            <div data-aos="fade-right" data-aos-duration="1000">
               <h2 class="section-title">An Exclusive Selection</h2>
               <p class="section-content top-line bottom-line">
                 HMS designs incense sticks for a transcendental experienc For that, we depend on rare ingredients and quality essent oils that aren't always readily available. Each product is painstakingly handcrafted without mass-production methods. Therefore, our popular range of incense sticks is manufactured in batches of a limited number.
@@ -333,35 +372,56 @@
         <div class="row">
           <div class="col-xs-12 col-sm-4 col-md-4">
             <div class="collection-wrapper">
-              <!-- <h4 class="text-overlay">Legend</h4> -->
+              <div class="product-info-overlay">
+                <div class="overlay-content">
+                  <h5 class="collection-name">
+                    THE HERITAGE SERIES
+                  </h5>
+                  <div class="collection-price">MRP ₹ 999/-</div>
+                </div>
+              </div>
               <img
                 src="./assets/images/Jasmine.jpg"
                 alt=""
                 class="img-responsive"
               />
-              <div class="collection-name">
-                THE HERITAGE SERIES
-              </div>
-              <div class="collection-price">MRP ₹ 999/-</div>
             </div>
           </div>
           <div class="col-xs-12 col-sm-4 col-md-4">
             <div class="collection-wrapper">
-              <!-- <h4 class="text-overlay">Absolute</h4> -->
+              <div class="product-info-overlay">
+                <div class="overlay-content">
+                  <h5 class="collection-name">
+                    THE ABSOLUTE RANGE
+                  </h5>
+                  <div class="collection-price">MRP ₹ 699/-</div>
+                </div>
+              </div>
               <img
                 src="./assets/images/Agarwood_Srilanka.jpg"
                 alt=""
                 class="img-responsive"
               />
-              <div class="collection-name">
-                THE ABSOLUTE RANGE
-              </div>
-              <div class="collection-price">MRP ₹ 499/-</div>
             </div>
           </div>
           <div class="col-xs-12 col-sm-4 col-md-4">
             <div class="collection-wrapper">
-              <!-- <h4 class="text-overlay">Classic</h4> -->
+              <div class="product-info-overlay">
+                <div class="overlay-content">
+                  <h5 class="collection-name">
+                    THE CLASSIC RANGE
+                  </h5>
+                  <div class="collection-price">MRP ₹ 199/-</div>
+                </div>
+              </div>
+              <img
+                src="./assets/images/lemongrass.jpg"
+                alt=""
+                class="img-responsive"
+              />
+            </div>
+            <!-- <div class="collection-wrapper">
+              <h4 class="text-overlay">Classic</h4>
               <img
                 src="./assets/images/lemongrass.jpg"
                 alt=""
@@ -371,12 +431,12 @@
                 THE CLASSIC RANGE
               </div>
               <div class="collection-price">MRP ₹ 199/-</div>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="row">
           <div class="col-xs-12 collection-button-section">
-            <button class="view-collection-button btn-outline-primary">VIEW COLLECTION</button>
+            <button class="view-collection-button btn-outline-primary">SHOP NOW</button>
           </div>
         </div>
       </div>
@@ -384,23 +444,23 @@
     <section class="section bottom-section">
       <div class="container">
         <div class="row mb-30">
-          <div data-aos="fade-right">
+          <div data-aos="fade-right" data-aos-duration="1000">
             <div class="col-xs-12 col-sm-6 col-md-4">
               <h4 class="section-title">Gifting with a Soul</h4>
               <p class="section-content top-line bottom-line">
                 HMS is a traditional enterprise, flourishing around India's diversity. We love every festival of the soil, and it is this deep fondness for the country's vibrant celebrations that helped us conceptualise expressive gift boxes. Your loved ones can select from a beautiful selection of luxury packages.
               </p>
-              <button class="view-button btn-outline-primary">VIEW PRODUCTS</button>
+              <button class="view-button btn-outline-primary">SHOP NOW</button>
             </div>
           </div>
-          <div data-aos="fade-left">
+          <div data-aos="fade-left" data-aos-duration="1000">
             <div class="col-xs-12 col-sm-6 col-md-offset-2 col-md-6">
               <img src="assets/images/gifting.png" alt="" class="img-responsive" />
             </div>
           </div>
         </div>
         <div class="row">
-          <div data-aos="fade-right">
+          <div data-aos="fade-right" data-aos-duration="1000">
             <div class="col-xs-12 col-sm-6 col-md-6">
               <img
                 src="assets/images/accessories.png"
@@ -409,13 +469,13 @@
               />
             </div>
           </div>
-          <div data-aos="fade-left">
+          <div data-aos="fade-left" data-aos-duration="1000">
             <div class="col-xs-12 col-sm-6 col-md-4">
               <h4 class="section-title">Illuminating every Home</h4>
               <p class="section-content top-line bottom-line">
                 Alongside premium incense sticks, HMS has a gorgeous portfolio of handcrafted home décor products. Discover our stylish accessories, ranging from elegant aromatherapy sets to earthy incense storage units. The sophisticated designs deepen the sweet-scented serenity of your sanctum.
               </p>
-              <button class="view-button btn-outline-primary">VIEW ACCESSORIES</button>
+              <button class="view-button btn-outline-primary">SHOP NOW</button>
             </div>
           </div>
         </div>
