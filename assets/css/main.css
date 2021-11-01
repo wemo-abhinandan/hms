@@ -72,7 +72,7 @@ img {
   font-family: "PT Serif", serif;
   font-size: 22px;
   font-weight: 700;
-  color: #c3a483;
+  color: #b68e65;
 }
 
 .section-content {
@@ -205,8 +205,8 @@ img {
 }
 
 .carousel-section {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .carousel-section .overlay {
@@ -909,6 +909,21 @@ hr {
     padding-top: 100px;
     padding-bottom: 250px;
   }
+}
+
+.ingredient-section .section-title {
+  color: #b68e65;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.ingredient-section .row {
+  margin-bottom: 100px;
+}
+
+.legacy-heading {
+  margin-bottom: 20px;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

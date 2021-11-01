@@ -60,6 +60,6 @@ function setBoxHeight() {
     $(".process-box").css("height", imageHeight);
 }
 
-$('.carousel').carousel({
-    interval: 5000
-  })
+// $('.carousel').carousel({
+//     interval: 3000
+//   })
