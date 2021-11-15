@@ -57,6 +57,11 @@ img {
   user-select: none;
 }
 
+.image-box-shadow{
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.76);
+}
+
 ::selection {
   background-color: #73532f;
   color: #fff;
