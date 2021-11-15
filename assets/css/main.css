@@ -842,7 +842,20 @@ hr {
 }
 
 .contact-us-title {
+  text-align: center;
   margin: 0;
+}
+
+.contact-information {
+  padding: 45px;
+}
+
+.contact-form-submit-button {
+  text-align: right;
+}
+
+.contact-us-hr {
+  width: 8%;
 }
 
 .mail-form {
@@ -1291,6 +1304,10 @@ hr {
 .contact-form-section .btn-default:active {
   background-color: #fff;
   color: #73532f;
+}
+
+.contact-page-image {
+  padding-bottom: 25px;
 }
 
 /* Products page styles */
