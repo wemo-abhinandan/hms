@@ -213,6 +213,9 @@ img {
   padding-top: 0px;
   padding-bottom: 0px;
 }
+.carousel-section .carousel-inner{
+  height: 854.55px;
+}
 
 .carousel-section .overlay {
   position: absolute;
@@ -692,6 +695,7 @@ hr {
 .copytext {
   font-weight: 500;
   color: #aa8265;
+  float: right;
 }
 
 .screen-overlay {
@@ -920,7 +924,7 @@ hr {
   }
 
   .ingredient-section {
-    background-image: url("../images/ingredients-background.png");
+    background-image: url("../images/secret-mix.png");
     background-repeat: no-repeat;
     background-size: 75%;
     background-position: 80% 25%;
@@ -938,6 +942,25 @@ hr {
 
 .ingredient-section .row {
   margin-bottom: 100px;
+}
+
+.exclusive-section {
+  background-image: url("../images/exclusive-selection.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0% 0%;
+  height: 1020px;
+}
+
+.exclusive-section .section-title {
+color: #b68e65;
+font-style: italic;
+text-align: center;
+margin-bottom: 50px;
+}
+
+.exclusive-section .row {
+margin-bottom: 100px;
 }
 
 .legacy-heading {
