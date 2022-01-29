@@ -391,10 +391,6 @@ img {
   margin-bottom: 30px;
 }
 
-.feature-section .container{
-  width: 950px;
-}
-
 .feature-section .story{
   align-items: center;
 }
@@ -1707,6 +1703,7 @@ margin-bottom: 100px;
 
 .collection-name {
   margin-top: 15px;
+  padding: 0px 20px;
 }
 
 .view-button {
