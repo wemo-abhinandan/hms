@@ -396,8 +396,8 @@ img {
 }
 
 .feature-section .storyImage{
-  height: 200px;
-  width: 400px;
+  height: 300px;
+  width: 450px;
   margin-top: 20px;
 }
 
@@ -571,6 +571,62 @@ img {
   margin-left: 0;
 }
 
+.comingsoon-wrapper .product-info-overlay {
+  background: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.25s ease-in;
+}
+
+.comingsoon-wrapper:hover .product-info-overlay,
+.comingsoon-wrapper:focus .product-info-overlay{
+  opacity: 1;
+}
+
+.comingsoon-wrapper .overlay-content {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+.comingsoon-wrapper {
+  position: relative;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+.comingsoon-wrapper .img-responsive {
+  margin: auto;
+}
+
+.comingsoon-wrapper .text-overlay {
+  font-family: "PT Serif", serif;
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -40px;
+  color: #fff;
+  text-shadow: 0 1px 2px rgba(20, 20, 20, 0.2);
+}
+
+.comingsoon-name{
+  font-family: "Montserrat", sans-serif;
+  color: #73532f;
+  text-transform: uppercase;
+  
+}
 .bottom-section .section-title {
   color: #b68e65;
   font-style: italic;
