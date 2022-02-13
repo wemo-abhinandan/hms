@@ -396,8 +396,8 @@ img {
 }
 
 .feature-section .storyImage{
-  height: 300px;
-  width: 450px;
+  height: 350px;
+  width: 500px;
   margin-top: 20px;
 }
 
@@ -999,9 +999,9 @@ hr {
 .exclusive-section {
   background-image: url("../images/exclusive-selection.png");
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-position: 0% 0%;
-  height: 1020px;
+  background-size: contain;
+  background-position: 40% 0%;
+  height: 100vh;
 }
 
 .exclusive-section .section-title {
@@ -1212,7 +1212,7 @@ margin-bottom: 100px;
   min-width: 100vw;
   padding: 0;
   overflow: hidden;
-  max-height: 800px;
+  max-height: 700px;
 }
 
 .video-overlay {
