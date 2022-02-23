@@ -396,8 +396,8 @@ img {
 }
 
 .feature-section .storyImage{
-  height: 350px;
-  width: 500px;
+  height: 600px;
+  width: auto;
   margin-top: 20px;
 }
 
