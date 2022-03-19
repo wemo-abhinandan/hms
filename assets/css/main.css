@@ -976,9 +976,9 @@ hr {
   }
 
   .ingredient-section {
-    background-image: url("../images/secret-mix.png");
+    background-image: url("../images/secret-mix.jpg");
     background-repeat: no-repeat;
-    background-size: 75%;
+    background-size: 100%;
     background-position: 80% 25%;
     padding-top: 100px;
     padding-bottom: 250px;
@@ -1213,6 +1213,9 @@ margin-bottom: 100px;
   padding: 0;
   overflow: hidden;
   max-height: 700px;
+  background-image:  url("../images/about/Craftmanship.jpg");
+  display: block;
+  background-size: cover;
 }
 
 .video-overlay {
@@ -1246,6 +1249,31 @@ margin-bottom: 100px;
   text-align: center;
   margin: 0;
   text-shadow: 0 1px 2px rgba(10, 10, 10, 0.25);
+}
+
+.craftmentship-card-title{
+  font-family: "PT Serif", serif;
+  font-size: 1.5rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+  /* text-shadow: 0 1px 2px rgba(10, 10, 10, 0.25); */
+}
+
+.craftmentship-card-image{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.craftmentship-container{
+  width: 845px;
+  /* margin: auto; */
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 @media (min-aspect-ratio: 16/9) {
