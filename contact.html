@@ -13,6 +13,7 @@
     <!-- Fevicon -->
     <link rel="icon" type="image/png" href="assets/images/hms-footer-logo.png"/>
   </head>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
   <script type="text/javascript">
       (function() {
@@ -26,11 +27,20 @@
             event.preventDefault();
             emailjs.sendForm('service_mb2pc4i', 'template_hhrc8eu', this)
                 .then(function() {
-                    console.log('SUCCESS!');
+                  const inputs = document.querySelectorAll('#name, #email, #subject, #message');
+                  inputs.forEach(input => {
+                    input.value = '';
+                  });
+                  alert('SUCCESS!').then(function() {
+                    location.reload()
+                  })
                 }, function(error) {
                     console.log('FAILED...', error);
                 });
         });
+    }
+    function enableBtn(){
+      document.getElementById("sendBtn").disabled = false;
     }
   </script>
   <body>
@@ -154,25 +164,25 @@
               <form id="myForm">
                 <div class="form-row">
                   <div class="col form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                    <input type="text" name="name" class="form-control" required id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                     <div class="validate"></div>
                   </div>
                   <div class="col form-group">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                    <input type="email" class="form-control" required name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                     <div class="validate"></div>
                   </div>
                 </div>
                 <div class="form-group">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                  <input type="text" class="form-control" required name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
                   <div class="validate"></div>
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                  <textarea class="form-control" required name="message" id="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                   <div class="validate"></div>
                 </div>
-                <div class="g-recaptcha" data-sitekey="6LcE6XgfAAAAANYswkIsgViDSF3OLTegJhgT1Qpz"></div>
+                <div class="g-recaptcha" data-callback="enableBtn" data-sitekey="6LcE6XgfAAAAANYswkIsgViDSF3OLTegJhgT1Qpz"></div>
                 <br/>
-                <div class="contact-form-submit-button"><button class="btn btn-default" type="submit">Send</button></div>
+                <div class="contact-form-submit-button"><button class="btn btn-default" type="submit" id="sendBtn" disabled="disabled">Send</button></div>
                 <div class="row">
                   <div class="col-xs-12">
                     <div
