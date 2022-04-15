@@ -13,6 +13,26 @@
     <!-- Fevicon -->
     <link rel="icon" type="image/png" href="assets/images/hms-footer-logo.png"/>
   </head>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+      (function() {
+          // https://dashboard.emailjs.com/admin/account
+          emailjs.init('ZQEFotKDyUvhaCEAa');
+      })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('myForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            emailjs.sendForm('service_mb2pc4i', 'template_hhrc8eu', this)
+                .then(function() {
+                    console.log('SUCCESS!');
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+        });
+    }
+  </script>
   <body>
     <!-- Header section starts here -->
     <header class="header static">
@@ -131,7 +151,7 @@
         <section class="section contact-form-section">
           <div class="container">
             <div class="col-lg-12 mail-form">
-              <form action="handlers/form-handler.php" method="post">
+              <form id="myForm">
                 <div class="form-row">
                   <div class="col form-group">
                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
@@ -150,6 +170,8 @@
                   <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                   <div class="validate"></div>
                 </div>
+                <div class="g-recaptcha" data-sitekey="6LcE6XgfAAAAANYswkIsgViDSF3OLTegJhgT1Qpz"></div>
+                <br/>
                 <div class="contact-form-submit-button"><button class="btn btn-default" type="submit">Send</button></div>
                 <div class="row">
                   <div class="col-xs-12">
