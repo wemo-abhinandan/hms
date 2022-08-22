@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact us</title>
-    <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/main.css" />
-    <!-- Fevicon -->
-    <link rel="icon" type="image/png" href="assets/images/hmsLogo.png"/>
-  </head>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-  <script type="text/javascript">
-      (function() {
-          // https://dashboard.emailjs.com/admin/account
-          emailjs.init('ZQEFotKDyUvhaCEAa');
-      })();
-  </script>
-  <script type="text/javascript">
-    window.onload = function() {
-        document.getElementById('myForm').addEventListener('submit', function(event) {
-            event.preventDefault();
-            emailjs.sendForm('service_mb2pc4i', 'template_hhrc8eu', this)
-                .then(function() {
-                  const inputs = document.querySelectorAll('#name, #email, #subject, #message');
-                  inputs.forEach(input => {
-                    input.value = '';
-                  });
-                  alert('SUCCESS!').then(function() {
-                    location.reload()
-                  })
-                }, function(error) {
-                    console.log('FAILED...', error);
-                });
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact us</title>
+  <link rel="stylesheet" href="assets/css/vendors/bootstrap.min.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <!-- Fevicon -->
+  <link rel="icon" type="image/png" href="assets/images/hmsLogo.png" />
+</head>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script type="text/javascript">
+  (function () {
+    // https://dashboard.emailjs.com/admin/account
+    emailjs.init('ZQEFotKDyUvhaCEAa');
+  })();
+</script>
+<script type="text/javascript">
+  window.onload = function () {
+    document.getElementById('myForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      emailjs.sendForm('service_mb2pc4i', 'template_hhrc8eu', this)
+        .then(function () {
+          const inputs = document.querySelectorAll('#name, #email, #subject, #message');
+          inputs.forEach(input => {
+            input.value = '';
+          });
+          alert('SUCCESS!').then(function () {
+            location.reload()
+          })
+        }, function (error) {
+          console.log('FAILED...', error);
         });
-    }
-    function enableBtn(){
-      document.getElementById("sendBtn").disabled = false;
-    }
-  </script>
-  <body>
-    <!-- Header section starts here -->
-    <header class="header static">
-      <!-- <div class="top-bar">
+    });
+  }
+  function enableBtn() {
+    document.getElementById("sendBtn").disabled = false;
+  }
+</script>
+
+<body>
+  <!-- Header section starts here -->
+  <header class="header static">
+    <!-- <div class="top-bar">
         <div class="container">
           <div class="row">
             <div class="col-xs-12 col-sm-offset-6 col-sm-6">
@@ -76,130 +77,126 @@
           </div>
         </div>
       </div> -->
-      <div class="nav-wrapper">
-        <nav
-          class="navbar navbar-default navbar-transparent navbar-coloured"
-          data-spy="affix"
-          data-offset-top="250"
-        >
-          <div class="container">
-            <div class="navbar-header">
-              <button
-                type="button"
-                class="navbar-toggle"
-                data-toggle="collapse"
-                data-target="#navbar"
-              >
-                <span class="toggle-text visible-xs">MENU</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="./">
-                <img src="assets/images/hms.png" class="hidden-xs" alt="HMS" />
-                <img
-                  src="assets/images/hms-white.png"
-                  class="visible-xs"
-                  alt="HMS"
-                />
-              </a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbar">
-              <ul class="nav navbar-nav navbar-right">
-                <li>
-                  <a href="https://shop.hmsofficial.com" target="_blank">Shop</a>
-                </li>
-                <li>
-                  <a href="about-us.html">Craftmanship</a>
-                </li>
-                <li>
-                  <a href="./index.html#collectionSection">Collection</a>
-                </li>
-                <li>
-                  <a href="contact.html">Contact</a>
-                </li>
-              </ul>
-            </div>
+    <div class="nav-wrapper">
+      <nav class="navbar navbar-default navbar-transparent navbar-coloured" data-spy="affix" data-offset-top="250">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+              <span class="toggle-text visible-xs">MENU</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="./">
+              <img src="assets/images/hms.png" class="hidden-xs" alt="HMS" />
+              <img src="assets/images/hms-white.png" class="visible-xs" alt="HMS" />
+            </a>
           </div>
-        </nav>
-      </div>
-    </header>
-    <!-- Header section ends here -->
-    <div class="col-xl-12 container contact-body">
-      <!-- <div class="col-xs-12 col-sm-7 contact-us" > -->
-        <section class="section contact-top-section contact-us"> 
-          <div class="container">
-            <div class="row">
-              <div class="col-xs-12">
-                <h2 class="section-title contact-us-title">Contact Us</h2>
-                <hr class="contact-us-hr"/>
-              </div>
-            </div>
-            <div class="row">
-              <div class="section-content contact-information">
-                <!-- <ul>
+          <div class="collapse navbar-collapse" id="navbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                <a href="https://shop.hmsofficial.com" target="_blank">Shop</a>
+              </li>
+              <li>
+                <a href="about-us.html">Craftmanship</a>
+              </li>
+              <li>
+                <a href="./index.html#collectionSection">Collection</a>
+              </li>
+              <li>
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- Header section ends here -->
+  <div class="col-xl-12 container contact-body">
+    <!-- <div class="col-xs-12 col-sm-7 contact-us" > -->
+    <section class="section contact-top-section contact-us">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12">
+            <h2 class="section-title contact-us-title">Contact Us</h2>
+            <hr class="contact-us-hr" />
+          </div>
+        </div>
+        <div class="row">
+          <div class="section-content contact-information">
+            <!-- <ul>
                   <li>Address: 451, Near Fadke House Chowk, Raviwar Peth, Pune, Maharashtra - 411 002</li>
                   <li>Mobile: <a href="tel:+911234567890">+91 12345 67890</a></li>
                   <li>Email: <a href="mailto:hello@hmsofficial.com">hello@hmsofficial.com</a></li>
                   <li>Press Inquiries: <a href="mailto:hello@hmsofficial.com">hello@hmsofficial.com</a></li>
                   <li>Sales Inquiries: <a href="mailto:sales@hmsofficial.com">sales@hmsofficial.com</a></li>
                 </ul> -->
-                <ol>
-                  <li>For queries related to your existing orders or if you are having trouble to place an order, please email us at orders@hmsofficial.com</li>
-                  <li>If you wish to join us or if you are an association willing to collaborate with us for building a hand-rolling unit, please fill up the form below.</li>
-                  <li>We do not have a loyalty program, but we do share our love to our existing customers by emailing them festive coupons and promos.</li>
-                  <li>We do not have any authorized dealers or stockists, if you wish to buy our products in bulk or for resale purposes, please feel free to connect throught the form below.</li>
-                  <li>In any case, you can always fill up the contact us form below so that our concerned department can contact you as early as possible.</li>
-                </ol>
+            <ol>
+              <li>For queries related to your existing orders or if you are having trouble to place an order, please
+                email us at orders@hmsofficial.com</li>
+              <li>If you wish to join us or if you are an association willing to collaborate with us for building a
+                hand-rolling unit, please fill up the form below.</li>
+              <li>We do not have a loyalty program, but we do share our love to our existing customers by emailing them
+                festive coupons and promos.</li>
+              <li>We do not have any authorized dealers or stockists, if you wish to buy our products in bulk or for
+                resale purposes, please feel free to connect throught the form below.</li>
+              <li>In any case, you can always fill up the contact us form below so that our concerned department can
+                contact you as early as possible.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- </div> -->
+    <!-- <div class="col-xs-12 col-sm-5" > -->
+    <section class="section contact-form-section">
+      <div class="container">
+        <div class="col-lg-12 mail-form">
+          <form id="myForm">
+            <div class="form-row">
+              <div class="col form-group">
+                <input type="text" name="name" class="form-control" required id="name" placeholder="Your Name"
+                  data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                <div class="validate"></div>
+              </div>
+              <div class="col form-group">
+                <input type="email" class="form-control" required name="email" id="email" placeholder="Your Email"
+                  data-rule="email" data-msg="Please enter a valid email" />
+                <div class="validate"></div>
               </div>
             </div>
-          </div>
-        </section>
-      <!-- </div> -->
-      <!-- <div class="col-xs-12 col-sm-5" > -->
-        <section class="section contact-form-section">
-          <div class="container">
-            <div class="col-lg-12 mail-form">
-              <form id="myForm">
-                <div class="form-row">
-                  <div class="col form-group">
-                    <input type="text" name="name" class="form-control" required id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
-                    <div class="validate"></div>
-                  </div>
-                  <div class="col form-group">
-                    <input type="email" class="form-control" required name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
-                    <div class="validate"></div>
-                  </div>
-                </div>
-                <div class="form-group">
-                  <input type="text" class="form-control" required name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                  <div class="validate"></div>
-                </div>
-                <div class="form-group">
-                  <textarea class="form-control" required name="message" id="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
-                  <div class="validate"></div>
-                </div>
-                <div class="g-recaptcha" data-callback="enableBtn" data-sitekey="6LcE6XgfAAAAANYswkIsgViDSF3OLTegJhgT1Qpz"></div>
-                <br/>
-                <div class="contact-form-submit-button"><button class="btn btn-default" type="submit" id="sendBtn" disabled="disabled">Send</button></div>
-                <div class="row">
-                  <div class="col-xs-12">
-                    <div
-                      class="alert alert-success alert-dismissable hidden visualhidden"
-                    >
-                      <a href="#" class="close" data-dismiss="alert">&times;</a>
-                      <span></span>
-                    </div>
-                  </div>
-                </div>
-              </form>
+            <div class="form-group">
+              <input type="text" class="form-control" required name="subject" id="subject" placeholder="Subject"
+                data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+              <div class="validate"></div>
             </div>
-          </div>
-        </section>
-      <!-- </div> -->
-    </div>
+            <div class="form-group">
+              <textarea class="form-control" required name="message" id="message" rows="5" data-rule="required"
+                data-msg="Please write something for us" placeholder="Message"></textarea>
+              <div class="validate"></div>
+            </div>
+            <div class="g-recaptcha" data-callback="enableBtn" data-sitekey="6LcE6XgfAAAAANYswkIsgViDSF3OLTegJhgT1Qpz">
+            </div>
+            <br />
+            <div class="contact-form-submit-button"><button class="btn btn-default" type="submit" id="sendBtn"
+                disabled="disabled">Send</button></div>
+            <div class="row">
+              <div class="col-xs-12">
+                <div class="alert alert-success alert-dismissable hidden visualhidden">
+                  <a href="#" class="close" data-dismiss="alert">&times;</a>
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- </div> -->
+  </div>
 
-    <!-- <section>
+  <!-- <section>
       <div>
         <div class="container">
           <div class="row">
@@ -212,54 +209,49 @@
         </div>
       </div>
     </section> -->
-    
-    <!-- Footer section starts here -->
-    <footer class="section footer-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12 col-sm-3 col-md-2">
-            <a href="/">
-              <img src="assets/images/hms-footer-logo.png" alt="" class="img-responsive"
-            /></a>
-          </div>
-          <div class="col-xs-12 col-sm-9 col-md-10">
-            <div class="row">
-              <div class="col-xs-12 col-sm-12 col-md-7">
-                <div class="">
-                  <div class="col-md-3">
-                    <ul class="footer-links">
-                      <li>
-                        <a href="hello@hmsofficial.com">Help</a>
-                      </li>
-                      <li><a href="#">Shipping</a></li>
-                      <li><a href="hello@hmsofficial.com">Feedback</a></li>
+
+  <!-- Footer section starts here -->
+  <footer class="section footer-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-2">
+          <a href="/">
+            <img src="assets/images/hms-footer-logo.png" alt="" class="img-responsive" /></a>
+        </div>
+        <div class="col-xs-12 col-sm-9 col-md-10">
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-7">
+              <div class="">
+                <!-- <div class="col-md-3">
+                  <ul class="footer-links">
+                    <li>
+                      <a href="hello@hmsofficial.com">Help</a>
+                    </li>
+                    <li><a href="#">Shipping</a></li>
+                    <li><a href="hello@hmsofficial.com">Feedback</a></li>
                   </ul>
-              </div>
-              <div class="col-md-9">
+                </div> -->
+                <div class="col-md-9">
                   <ul class="footer-links">
                     <li><a href="tnc.html">Terms &amp; Conditions</a></li>
                     <li><a href="rc.html">Returns &amp; Cancellation Policy</a></li>
                     <li><a href="pp.html">Privacy Policy</a></li>
-                    <li><a href="#">Payment Policy</a></li>
+                    <!-- <li><a href="#">Payment Policy</a></li> -->
                   </ul>
-                  </div>
-
                 </div>
+
               </div>
-              <div class="col-xs-12 col-sm-12 col-md-5">
-               
-                <!-- <div class="horizontal-rule"></div> -->
-                <div class="newsletter-wrapper">
-                  <form
-                    class="form"
-                    action="handlers/form-handler.php"
-                    method="POST"
-                  >
-                    <div class="alert alert-dismissable hidden visualhidden">
-                      <a href="#" class="close" data-dismiss="alert">&times;</a>
-                      <span></span>
-                    </div>
-                    <!-- <div class="form-group">
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-5">
+
+              <!-- <div class="horizontal-rule"></div> -->
+              <div class="newsletter-wrapper">
+                <form class="form" action="handlers/form-handler.php" method="POST">
+                  <div class="alert alert-dismissable hidden visualhidden">
+                    <a href="#" class="close" data-dismiss="alert">&times;</a>
+                    <span></span>
+                  </div>
+                  <!-- <div class="form-group">
                       <label for="email" class="control-label"
                         >Subscribe to HMS Club</label
                       >
@@ -277,20 +269,20 @@
                         <img src="assets/images/button.png" alt="button" />
                       </button>
                     </div> -->
-                  </form>
-                </div>
-                <div class="col-md-12 social-bar-wrapper">
-                  <ul class="list-inline social-media-links">
-                    <li class="twitter"><a href="https://twitter.com/hmsugandhi"></a></li>
-                    <li class="instagram"><a href="https://www.instagram.com/hmsugandhi/"></a></li>
-                    <li class="facebook"><a href="https://www.facebook.com/hmsugandhi/"></a></li>
-                  </ul>
-                </div>
+                </form>
+              </div>
+              <div class="col-md-12 social-bar-wrapper">
+                <ul class="list-inline social-media-links">
+                  <li class="twitter"><a href="https://twitter.com/hmsugandhi"></a></li>
+                  <li class="instagram"><a href="https://www.instagram.com/hmsugandhi/"></a></li>
+                  <li class="facebook"><a href="https://www.facebook.com/hmsugandhi/"></a></li>
+                </ul>
               </div>
             </div>
-            <!-- <hr/> -->
-            <div class="horizontal-rule"></div>
-            <!-- <div class="row">
+          </div>
+          <!-- <hr/> -->
+          <div class="horizontal-rule"></div>
+          <!-- <div class="row">
               <div class="col-xs-12 col-sm-12 col-md-7">
                 <div class="payment-options">
                   <h5 class="footer-label">Payment Options</h5>
@@ -315,36 +307,35 @@
                 </div>
               </div>
             </div> -->
-            <div class="row">
-              <div
-                class="col-xs-12 col-sm-9 col-md-12"
-              >
-                <div class="copyright-wrapper">
-                  <h5 class="copytext">
-                    &copy; 
-                    <script>
-                      var CurrentYear = new Date().getFullYear()
-                      document.write(CurrentYear)
-                    </script> Haridas Madhavdas Sugandhi.  All rights reserved.
-                  </h5>
-                </div>
+          <div class="row">
+            <div class="col-xs-12 col-sm-9 col-md-12">
+              <div class="copyright-wrapper">
+                <h5 class="copytext">
+                  &copy;
+                  <script>
+                    var CurrentYear = new Date().getFullYear()
+                    document.write(CurrentYear)
+                  </script> Haridas Madhavdas Sugandhi. All rights reserved.
+                </h5>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </footer>
-    <!-- Footer section ends here -->
-    <!-- Loader icon starts here -->
-    <div id="loading" class="screen-overlay">
-      <div class="loading">
-        <img src="assets/images/loader.svg" alt="Loading..." />
-        <p>Processing...</p>
-      </div>
     </div>
-    <!-- Loader icon ends here -->
-    <script src="assets/js/vendors/jquery.min.js"></script>
-    <script src="assets/js/vendors/bootstrap.min.js"></script>
-    <script src="assets/js/main.js"></script>
-  </body>
+  </footer>
+  <!-- Footer section ends here -->
+  <!-- Loader icon starts here -->
+  <div id="loading" class="screen-overlay">
+    <div class="loading">
+      <img src="assets/images/loader.svg" alt="Loading..." />
+      <p>Processing...</p>
+    </div>
+  </div>
+  <!-- Loader icon ends here -->
+  <script src="assets/js/vendors/jquery.min.js"></script>
+  <script src="assets/js/vendors/bootstrap.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
