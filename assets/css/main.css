@@ -628,7 +628,7 @@ img {
   font-family: "Montserrat", sans-serif;
   color: #73532f;
   text-transform: uppercase;
-  
+
 }
 .bottom-section .section-title {
   color: #b68e65;
@@ -790,8 +790,8 @@ hr {
 
 .social-media-links li a {
   display: inline-block;
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
   outline: 0;
   background-image: url("../images/social-media-sprites.png");
   background-size: 200%;
@@ -820,6 +820,19 @@ hr {
   height: 38px;
   outline: 0;
   background-image: url("../images/twitter.png");
+  background-size: 75%;
+  background-repeat: no-repeat;
+  /* background-position: 0 0; */
+  text-decoration: none !important;
+  transition: all 0.25s ease-in-out;
+}
+
+.social-media-links li.pinterest a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  outline: 0;
+  background-image: url("../images/pinterest.png");
   background-size: 75%;
   background-repeat: no-repeat;
   /* background-position: 0 0; */
@@ -1728,12 +1741,12 @@ margin-bottom: 100px;
 /* About us page styling */
 .timeline-section{
   background-color: #382724;
-} 
+}
 
 .timeline-box{
   position: relative;
   margin: 15px auto;
-} 
+}
 
 .timeline-box::after{
   position: absolute;
@@ -1773,11 +1786,11 @@ margin-bottom: 100px;
     content: '\f061';
     top: 50%;
     margin-top: -10px;
-    right: -30px;  
+    right: -30px;
   }
 }
 
-.about-middle2-section{ 
+.about-middle2-section{
   background-color: #382724;
 }
 
@@ -1812,7 +1825,7 @@ margin-bottom: 100px;
   font-size: 14px;
   color: #73532f;
   text-transform: uppercase;
-  
+
 }
 
 .collection-name {
