@@ -811,18 +811,18 @@ hr {
 } */
 
 .social-media-links li.facebook a {
-  background-position: 0 -45px;
+  background-position: -5px -44px;
 }
 
 .social-media-links li.twitter a {
   display: inline-block;
-  width: 39px;
-  height: 38px;
+  width: 40px;
+  height: 40px;
   outline: 0;
   background-image: url("../images/twitter.png");
-  background-size: 75%;
+  background-size: 70%;
   background-repeat: no-repeat;
-  /* background-position: 0 0; */
+   background-position: 0 2px;
   text-decoration: none !important;
   transition: all 0.25s ease-in-out;
 }
@@ -833,15 +833,15 @@ hr {
   height: 40px;
   outline: 0;
   background-image: url("../images/pinterest.png");
-  background-size: 75%;
+  background-size: 70%;
   background-repeat: no-repeat;
-  /* background-position: 0 0; */
+   background-position: 0 2px;
   text-decoration: none !important;
   transition: all 0.25s ease-in-out;
 }
 
 .social-media-links li.instagram a {
-  background-position: -45px 0;
+  background-position: -45px -4px;
 }
 
 /* .social-media-links li.youtube a {
