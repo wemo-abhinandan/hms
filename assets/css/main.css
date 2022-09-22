@@ -1329,7 +1329,7 @@ margin-bottom: 100px;
 @media (max-aspect-ratio: 16/9) {
   #background-video {
     width: auto;
-    height: 100%;
+    /*height: 100%;*/
   }
 }
 
